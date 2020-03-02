@@ -1,0 +1,25 @@
+li {
+	list-style-type: none;
+	font-size: 16pt;
+}
+.login {
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 800px;
+	background : rgb(153, 198, 211);
+	border: 1px soild rgb(1, 20, 24);
+}
+.login h2 {
+	margin-left: 38px;
+	text-align: center;
+}
+input {
+	font-size: 20pt;
+}
+input:focus, textarea:focus{
+	background-color: lightyellow;
+}
+input submit {
+	font-size: 10pt;
+}

@@ -1,0 +1,13 @@
+h1{
+	color: blue;
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+}
+p{
+	color: red;
+	font-style: 22px;
+}
+body{
+	background-color: YellowGreen;
+}
