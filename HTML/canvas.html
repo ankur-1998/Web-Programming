@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Canvas Into HTML Pages</title>
+<style>
+	#myCanvas1{
+		border:10px dotted #564;
+	}
+	#myCanvas2{
+		border:10px dashed #545;
+	}
+	#myCanvas3{
+		border:10px solid #345;
+	}
+</style>
+<script>
+	window.onload=function(){
+		var canvas=document.getElementById("myCanvas1");
+		var context=canvas.getContext("2d");
+		context.lineWidth=15;
+		context.strokeStyle="orange";
+		context.moveTo(1,20);
+		context.lineTo(44,55);
+		context.stroke();
+	};
+	function drawline()
+{
+		var canvas1=document.getElementById("myCanvas1");
+		var context1=canvas1.getContext("2d");
+		context1.lineWidth=5;
+		context1.strokeStyle="blue";
+		context1.moveTo(350,250);
+		context1.lineTo(100,450);
+		context1.stroke();	
+	};
+	function drawArc(){
+		var canvas=document.getElementById("myCanvas2");
+		var context=canvas.getContext("2d");
+		context.arc(300,470,80,0.2*Math.PI,1.4*Math.PI,false);
+		context.stroke();
+	};
+	function drawCircle(){
+		var canvas=document.getElementById("myCanvas3");
+		var context=canvas.getContext("2d");
+		context.arc(150,100,70,0,2*Math.PI);
+		context.stroke();
+	};
+</script>
+</head>
+<body>
+	<canvas id="myCanvas1" width="800" height="600"></canvas>
+	<canvas id="myCanvas2" width="800" height="600"></canvas>
+	<canvas id="myCanvas3" width="800" height="600"></canvas>
+	<button type="button" onclick="drawline();">Line</button>
+	<button type="button" onclick="drawArc();">For Arc</button>
+	<button type="button" onclick="drawCircle();">For Circle</button>
+</body>
+</html>
